@@ -4,4 +4,4 @@ enum ShowCloseButton { inside, outside, none }
 
 enum ClipAreaShape { oval, rectangle }
 
-enum Event { show, hide }
+enum Event { show, hide, rebuild }

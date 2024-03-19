@@ -216,6 +216,9 @@ class _SuperTooltipState extends State<SuperTooltip>
       case Event.hide:
         _hideTooltip();
         break;
+      case Event.rebuild:
+        _entry?.markNeedsBuild();
+        break;
     }
   }
 

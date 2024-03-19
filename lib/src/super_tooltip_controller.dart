@@ -30,4 +30,10 @@ class SuperTooltipController extends ChangeNotifier {
       _completer.complete();
     }
   }
+
+  void markNeedsBuild() {
+    event = Event.rebuild;
+    _completer = Completer();
+    notifyListeners();
+  }
 }
